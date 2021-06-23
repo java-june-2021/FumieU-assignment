@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #fafad2;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+

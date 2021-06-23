@@ -1,0 +1,5 @@
+package com.fumie.datetime.controllers;
+
+public class HomeController {
+
+}

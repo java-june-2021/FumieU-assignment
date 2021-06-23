@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Current time</title>
+	</head>
+		<body>
+			<h1>Current Time: <c:out value=${time}</h1>
+		</body>
+</html>

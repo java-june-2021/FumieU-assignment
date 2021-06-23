@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/fumieunosawa/Desktop/Java/FumieU-assignment/03-java-spring/01-spring-fundamentals/04-display-date/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/558536147.index
+/DisplayDateProject/src/main/java
+/Users/fumieunosawa/Desktop/Java/FumieU-assignment/03-java-spring/01-spring-fundamentals/04-display-date/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2015953444.index
+/DateTimeProject/src/main/java

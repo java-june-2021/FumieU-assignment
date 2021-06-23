@@ -1,0 +1,36 @@
+package com.codingdojo.displaydateproject.controllers;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class HomeController {
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+		public String index() {
+		return "index.jsp";
+	}
+	
+	@RequestMapping(value = "/date", method = RequestMethod.GET)
+	public String date(@PathVariable String date) {
+		Date date = new Date();
+		String pattern = "EEEE, 'the 'dd ' of ' MMMM, yyyy";
+		SimpleDateFormat dateOnly = new SimpleDateFormat(pattern);
+		String dateInput = dateOnly.format(date);
+//		viewModel.addAttribute("date", dateInput);
+		return "date.jsp";
+	}
+	@RequestMapping(value = "/time", method = RequestMethod.GET)
+	public String time(@PathVariable String time) {
+//		Date date = new Date();
+		String pattern = "h:mm a";
+		SimpleDateFormat timeOnly = new SimpleDateFormat(pattern);
+		String timeInput = timeOnly.format(date);		
+		return "time.jsp";
+	}
+
+}

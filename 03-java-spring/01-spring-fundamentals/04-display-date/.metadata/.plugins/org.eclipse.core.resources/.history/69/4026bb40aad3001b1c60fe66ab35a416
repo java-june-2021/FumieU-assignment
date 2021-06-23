@@ -1,0 +1,27 @@
+package com.codingdojo.displaydateproject.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime; 
+
+@Controller
+public class HomeController {
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+		public String index() {
+		return "index.jsp";
+	}
+	@RequestMapping(value = "/date", method = RequestMethod.GET)
+	
+		public String date(@PathVariable String date) {
+		new java.util.Date();
+		return "date.jsp";
+	}
+	@RequestMapping(value = "/time", method = RequestMethod.GET)
+		public String time(@PathVariable String time) {
+		return "time.jsp";
+	}
+
+}

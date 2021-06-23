@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/fumieunosawa/Desktop/Java/FumieU-assignment/03-java-spring/01-spring-fundamentals/04-display-date/.metadata/.plugins/org.eclipse.jdt.core
+1770298166.index
+2385314719.index
+1129796965.index
