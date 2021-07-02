@@ -31,10 +31,11 @@ public class BookService {
 		this.bRepo.deleteById(id);
 	  }
 	  //update
-	  public Book updateBook (Book book) {
-		return this.bRepo.save(book);   
-
+	  public void updateBook (Long id, Book book) {
+		  this.bRepo.save(book);
+		  }
+	  
 	}
 	 
 
-}
+

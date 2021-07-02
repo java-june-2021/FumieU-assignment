@@ -46,7 +46,7 @@ public class MainController{
 			return "input.jsp";
 		}else {
 			bService.createBook(book);
-		return "redirect:/";
+		return "redirect:/{id}";
 		}
 	}
 
@@ -59,7 +59,7 @@ public class MainController{
 	@PutMapping("/update/{id}")
 	public String update(@PathVariable("id") Long id, Book updateBook){
 		this.bService.updateBook(updateBook);
-		return "update.jsp";
+		return "redirect:/{id}";
 	}
 	@DeleteMapping("/delete/{id}")
 	public void delete(@PathVariable("id") Long id){

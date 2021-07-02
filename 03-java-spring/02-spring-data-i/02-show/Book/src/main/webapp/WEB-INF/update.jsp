@@ -11,9 +11,10 @@
 <h1>New Book</h1>
 <form:form action="/update/{id}" method="post" modelAttribute="book">
     <p>
-        <form:label path="title">Title</form:label>
-        <form:errors path="title"/>
-        <form:input path="title"/>
+        <form:label path="name">Title</form:label>
+        <form:errors path="name"/>
+        <form:input path="name"/>
+        <c:out value="${book.name.id}”/>"
     </p>
     <p>
         <form:label path="description">Description</form:label>
