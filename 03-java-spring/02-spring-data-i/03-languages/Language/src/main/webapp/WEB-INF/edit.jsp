@@ -14,7 +14,7 @@
 	<div id="wrapper">
         <h1> Edit this Language</h1>
         
-        <form:form action="update/${language.id}" method="POST" modelAttribute="language">
+        <form:form action="/language/${language.id}" method="POST" modelAttribute="language">
         <div class="form-group">
             <form:label path="name">Name</form:label>
             <form:errors path="name"/>

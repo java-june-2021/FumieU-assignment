@@ -66,7 +66,7 @@ public class MainController {
 		return "edit.jsp";
 		
 	}	
-	@PostMapping("/update/{id}")
+	@PostMapping("/{id}")
 	public String updateProcess(@Valid @ModelAttribute("language") Language language, BindingResult result, Model viewModel, @PathVariable("id") Long id) {
 		if(result.hasErrors()) {
 			return "show.jsp";
