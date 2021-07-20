@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#wrapper{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	background-color: silver;
+	padding: 30px;
+}
